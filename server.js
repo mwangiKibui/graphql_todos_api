@@ -1,7 +1,6 @@
 var express = require('express')
 var Schema = require('./schema')
 var graphQLHTTP = require('express-graphql')
-
 var app = express()
 app.use('/', graphQLHTTP({
   schema: Schema,
