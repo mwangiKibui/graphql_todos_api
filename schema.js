@@ -14,7 +14,7 @@ var TODO = mongoose.model('Todo', new Schema({
   id: mongoose.Schema.Types.ObjectId,
   title: String,
   completed: Boolean
-}))
+},{timestamps:true}))
 
 /*
  * I’m sharing my credentials here.
