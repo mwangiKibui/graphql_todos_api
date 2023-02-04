@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev":"nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,14 @@
     "express": "^4.13.3",
     "express-graphql": "^0.4.4",
     "graphql": "^0.4.12",
-    "mongoose": "^4.2.5"
+    "mongoose": "^6.9.0"
   },
   "standard": {
     "ignore": [
       "Procfile"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
