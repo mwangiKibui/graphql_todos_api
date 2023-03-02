@@ -2,6 +2,10 @@ var express = require('express')
 var Schema = require('./schema')
 var graphQLHTTP = require('express-graphql')
 var app = express()
+app.get("/",(req,res,next) => res.json({
+  success:true,
+  message:"Hello there"
+}))
 app.use('/', graphQLHTTP({
   schema: Schema,
   pretty: true,
